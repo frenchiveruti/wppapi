@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo2.css"/>
+    <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device−width, initial−scale=1.0" />
+      <title>Desbloqueo de Netbooks por Largo</title>
+        <script type="text/javascript">
+          function ingreso(ident) {
+            var IDPC = document.getElementById("intro").value;
+            var ARRANQUE = document.getElementById("Arranque").value;
+            window.open ("https://tdserver/tdserver/student/unlock_code_deal.jsp?hwid="+IDPC+"&bootTick="+ARRANQUE, '_blank');
+          }
+          function acceso() {
+          window.open ("https://tdserver/tdserver/student/student_login.jsp?hwid=C89CDC0C5B5E", '_blank');
+          }
+        </script>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head> 
+<!-- Usuario: C89CDC0C5B5E Contraseña: $3lsubmarinoMB pag:https://tdserver/tdserver/student/student_login.jsp-->
+<body>
+  <div id="pagewrap">
+    <div id="cuerpo">
+      <form ACTION="#" name="formulario" method="POST" > 
+        <div id="uno">
+          <label>ID de la PC o Hardware:</label>
+          <input type="text" name="IDPC" placeholder="Ejemplo: C89CDC0C5B5E" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('Arranque').focus()"/>  
+         
+        </div>
+        
+        <div id="dos">
+          <label>Marca de Arranque:  </label> 
+          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
+          
+        </div>
+
+
+        <div id="tres">         
+          <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
+          <button onclick="acceso();" type="button" id="servidor" name="servidor">Acceder al servidor</button>
+        </div>
+      </form> 
+    </div>
+  
+  <div id="footer">
+      <div id="footizq">
+        <a href="https://www.facebook.com/elsubmarinomb" onClick="this.href='https://www.facebook.com/elsubmarinomb'" target="_blank"><img href="https://www.facebook.com/elsubmarinomb" src="http://i.imgur.com/Yo58fWg.gif" alt="Pagina de Facebook" border="0" /></a>
+      </div>
+      <div id="footder">
+        <h5>v 4.0 Por Largo®</h5>
+      </div>
+    </div>
+
+    </div>
+</body>
