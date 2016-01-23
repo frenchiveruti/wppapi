@@ -1,0 +1,117 @@
+
+  form{
+      border:0px dashed goldenrod;
+      height:300px;
+      width:100%;
+    }
+    body{
+      background-color: black;
+      color: white;
+      width: 99%;
+      height: 90%;
+    }
+    label{
+      font-size: 2em;
+    }
+    #cuerpo{
+      border: 0px solid black;
+    }
+    #uno{
+      border:0px solid green;  
+    }
+
+    #uno label, #dos label{
+      float:left;
+    }
+
+    #uno input,#dos input{
+      float:right;
+      height: 2em;
+      width: 400px;
+    }
+
+    #uno, #dos{
+      display:inline-block;
+      padding:3%;  
+      width:94%;
+    }
+    #dos{
+      border:0px solid red;
+    }
+
+
+    #pagewrap{
+      border:0px solid black;
+      margin:0 auto;
+      padding:5%;  
+      width:80%;
+    }
+
+    /*Botones*/
+    #boton{
+      float: right;
+    }
+	#servidor{
+      float: left;
+	}
+	/*propiedades compartidas*/
+    #boton, #servidor{
+      height: 40px;
+      width: 400px;
+      font-size: 18px;
+    }
+	/*pie de pagina*/
+    #footer{
+      border:0px solid blue;
+      display:inline-block;
+      min-height:5px;
+      width:100%;
+    }
+    #footder {
+      border:0px solid red;
+      float:right;
+    }
+
+    #footder img{
+      max-width:100%;
+    }
+
+    #footizq{
+      border:0px solid green;
+      float:left;
+      width:20%;
+    }
+@media screen and (max-width: 720px) , screen and (max-height: 480px) {
+  form{
+    height: 200px;
+  }
+  label{
+      font-size: 1.5em;
+    }
+  #uno input,#dos input{
+      float:right;
+      height: auto;
+      width: 220px;
+    }
+	#boton, #servidor{
+      height: auto;
+      width: auto;
+      font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  form{
+    height: 150px;
+  }
+#footizq img{
+  display: none;
+}
+#pagewrap{
+    width: 200px;
+  }
+  
+#uno input,#dos input{
+      width: 200px;
+    }
+}
