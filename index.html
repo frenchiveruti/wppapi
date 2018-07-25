@@ -15,20 +15,20 @@
 <body>
   <div id="pagewrap">
     <div id="cuerpo">
-      <form ACTION="#" name="formulario" method="POST" > 
+      <form name="formulario" method="POST" > 
         <div id="uno">
           <label>ID de la PC o Hardware:</label>
-          <input type="text" name="IDPC" placeholder="Ejemplo: C89CDC0C5B5E" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>           
+          <input type="text" name="IDPC" placeholder="Ejemplo: C89CDC0C5B5E" id="intro" autofocus autocomplete="off" inputmode="tel" maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
         </div>
         
         <div id="dos">
           <label>Marca de Arranque:  </label> 
-          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
-          
+          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>          
         </div>
 
 
-        <div id="tres">         
+        <div id="tres">
+            <!-- input type="submit"  -->
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
         </div>
       </form> 
