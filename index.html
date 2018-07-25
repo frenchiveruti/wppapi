@@ -2,11 +2,11 @@
     <link rel="stylesheet" type="text/css" href="estilo2.css"/>
     <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-      <title>Whastapp API phone ARG</title>
+      <title>Desbloqueo de Netbooks por Largo</title>
         <script type="text/javascript">
           function ingreso(ident) {
-            var PHONE = document.getElementById("intro").value;
-            window.open ("https://api.whatsapp.com/send?phone=54"+PHONE, '_blank');
+            var IDPC = document.getElementById("intro").value;
+            window.open ("https://tdserver/tdserver/student/unlock_code_deal.jsp?hwid="+IDPC+"&bootTick=", '_blank');
           }
         </script>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -17,11 +17,16 @@
     <div id="cuerpo">
       <form ACTION="#" name="formulario" method="POST" > 
         <div id="uno">
-          <label>Número de Teléfono:</label>
-          <input type="text" name="telefono" placeholder="Ejemplo: 3513844453" id="intro" autofocus onkeydown="if (event.keyCode == 13) ('boton').click()" />
+          <label>ID de la PC o Hardware:</label>
+          <input type="text" name="IDPC" placeholder="Ejemplo: C89CDC0C5B5E" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>           
         </div>
+        
         <div id="dos">
+          <label>Marca de Arranque:  </label> 
+          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
+          
         </div>
+
 
         <div id="tres">         
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
