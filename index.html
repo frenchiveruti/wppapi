@@ -2,18 +2,14 @@
     <link rel="stylesheet" type="text/css" href="estilo2.css"/>
     <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-      <title>Desbloqueo de Netbooks por Largo</title>
+      <title>Whastapp API phone ARG</title>
         <script type="text/javascript">
           function ingreso(ident) {
-            var IDPC = document.getElementById("intro").value;
-            var ARRANQUE = document.getElementById("Arranque").value;
-            window.open ("https://tdserver/tdserver/student/unlock_code_deal.jsp?hwid="+IDPC+"&bootTick="+ARRANQUE, '_blank');
-          }
-          function acceso() {
-          window.open ("https://tdserver/tdserver/student/student_login.jsp?hwid=C89CDC0C5B5E", '_blank');
+            var phone = document.getElementById("intro").value;
+            window.open ("https://api.whatsapp.com/send?phone=54"+phone, '_blank');
           }
         </script>
-        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/frenchiveruti/desbloqueonetbook/gh-pages/images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 </head> 
 <!-- Usuario: C89CDC0C5B5E Contraseña: $3lsubmarinoMB pag:https://tdserver/tdserver/student/student_login.jsp-->
 <body>
@@ -21,21 +17,13 @@
     <div id="cuerpo">
       <form ACTION="#" name="formulario" method="POST" > 
         <div id="uno">
-          <label>ID de la PC o Hardware:</label>
-          <input type="text" name="IDPC" placeholder="Ejemplo: C89CDC0C5B5E" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('Arranque').focus()"/>  
+          <label>Número de Teléfono:</label>
+          <input type="text" name="phone" placeholder="Ejemplo: 3513844453" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>  
          
         </div>
-        
-        <div id="dos">
-          <label>Marca de Arranque:  </label> 
-          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
-          
-        </div>
-
 
         <div id="tres">         
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
-          <button onclick="acceso();" type="button" id="servidor" name="servidor">Acceder al servidor</button>
         </div>
       </form> 
     </div>
