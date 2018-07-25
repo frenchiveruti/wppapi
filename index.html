@@ -5,8 +5,8 @@
       <title>Whastapp API phone ARG</title>
         <script type="text/javascript">
           function ingreso(ident) {
-            var phone = document.getElementById("intro").value;
-            window.open ("https://api.whatsapp.com/send?phone=54"+phone, '_blank');
+            var PHONE = document.getElementById("intro").value;
+            window.open ("https://api.whatsapp.com/send?phone=54"+PHONE, '_blank');
           }
         </script>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -18,8 +18,7 @@
       <form ACTION="#" name="formulario" method="POST" > 
         <div id="uno">
           <label>Número de Teléfono:</label>
-          <input type="text" name="phone" placeholder="Ejemplo: 3513844453" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>  
-         
+          <input type="text" name="telefono" placeholder="Ejemplo: 3513844453" id="intro" autofocus onkeydown="if (event.keyCode == 13) ('boton').click()" />
         </div>
 
         <div id="tres">         
