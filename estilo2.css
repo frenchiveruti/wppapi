@@ -49,7 +49,7 @@
 
     /*Botones*/
     #boton{
-      float: right;
+      float: center;
     }
 	#servidor{
       float: left;
