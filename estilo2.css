@@ -6,8 +6,8 @@ form{
     body{
       background-color: black;
       color: white;
-      width: 99%;
-      height: 90%;
+      width: auto;
+      height: auto;
     }
     label{
       font-size: 2em;
@@ -124,10 +124,6 @@ form{
 #footizq img{
   display: none;
 }
-     body{
-       height: 80%;
-       width: 80%;
-     }
 #pagewrap{
     width: 200px;
   }
