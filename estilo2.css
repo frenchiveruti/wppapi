@@ -1,5 +1,4 @@
-
-  form{
+form{
       border:0px dashed goldenrod;
       height:300px;
       width:100%;
@@ -37,7 +36,7 @@
     }
     #dos{
       border:0px solid red;
-      display: none
+      display:none;
     }
 
 
@@ -82,7 +81,7 @@
       float:left;
       width:20%;
     }
-@media only screen and (min-resolution: 300dpi) {
+@media screen and (max-width: 720px) , screen and (max-height: 480px) {
   form{
     height: 200px;
   }
@@ -101,7 +100,7 @@
     }
 }
 
-@media only screen and (min-resolution: 300dpi) {
+@media screen and (max-width: 480px) {
   form{
     height: 150px;
   }
