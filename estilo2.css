@@ -101,7 +101,7 @@
     }
 }
 
-@media only screen and (-webkit-max-device-pixel-ratio: 3) and (max-width: 1080px) and (max-height: 1920px) {
+@media only screen and (min-resolution: 300dpi) {
   form{
     height: 150px;
   }
