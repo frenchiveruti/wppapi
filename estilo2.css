@@ -47,9 +47,6 @@ label {
   display: none;
 }
 
-
-#pagewrap {}
-
 /*Botones*/
 #boton {
   font-size: 48px;
@@ -144,7 +141,6 @@ screen and (max-height: 480px) {
   }
 
   form {
-    height: ;
     width: 100%;
   }
 
