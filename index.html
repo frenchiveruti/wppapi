@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="estilo2.css" />
+  <link rel="stylesheet" type="text/css" href="./estilo2.css" />
   <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
   <title>Whatsapp API phone</title>
   <script type="text/javascript">
@@ -20,20 +20,11 @@
     <div id="cuerpo">
       <form name="formulario" method="POST">
         <div id="uno">
-          <label>Número de teléfono:</label>
+          <label for="intro">Número de teléfono:</label>
           <input type="tel" name="IDPC" placeholder="Numero sin 0 ni 15" id="intro" autofocus autocomplete="off"
-            maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
+            maxlength="15" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
         </div>
-
-        <div id="dos">
-          <label>Marca de Arranque: </label>
-          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque"
-            onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
-        </div>
-
-
         <div id="tres">
-          <!-- input type="submit"  -->
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
         </div>
       </form>
