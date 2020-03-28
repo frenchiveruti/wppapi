@@ -1,150 +1,177 @@
-form{
-      border:0px dashed goldenrod;
-      height:300px;
-      width:100%;
-    }
-    body{
-      background-color: black;
-      color: white;
-      width: auto;
-      height: auto;
-    }
-    label{
-      font-size: 3em;
-    }
-    #cuerpo{
-      border: 0px solid green;
-    }
-    #uno{
-      border:0px solid green;  
-    }
-
-    #uno label, #dos label{
-      float:left;
-    }
-
-    #uno input,#dos input{
-      float:right;
-      width: 500px;
-        font-size: 3em;
-    }
-
-    #uno, #dos{
-      display:inline-block;
-      padding:3%;  
-      width:94%;
-    }
-    #dos{
-      border:0px solid red;
-      display:none;
-    }
-
-
-    #pagewrap{
-        
+form {
+  border: 0px dashed goldenrod;
+  height: 300px;
+  width: 100%;
 }
 
-    /*Botones*/
-    #boton{
-    font-size: 48px;
-    }
-	#servidor{
-      float: left;
-	}
-	/*propiedades compartidas*/
-    #boton, #servidor{
-      height: 40px;
-      width: 400px;
-      font-size: 18px;
-    }
-	/*pie de pagina*/
-    #footer{
-      border:0px solid blue;
-      display:inline-block;
-      min-height:5px;
-      width:100%;
-    }
-    #footder {
-      border:0px solid red;
-      float:right;
-    }
+body {
+  background-color: black;
+  color: white;
+  width: auto;
+  height: auto;
+}
 
-    #footder img{
-      max-width:100%;
-    }
+label {
+  font-size: 3em;
+}
 
-    #footizq{
-      border:0px solid green;
-      float:left;
-      width:20%;
-    }
-@media screen and (max-width: 720px) , screen and (max-height: 480px) {
-  form{
+#cuerpo {
+  border: 0px solid green;
+}
+
+#uno {
+  border: 0px solid green;
+}
+
+#uno label,
+#dos label {
+  float: left;
+}
+
+#uno input,
+#dos input {
+  float: right;
+  width: 500px;
+  font-size: 3em;
+}
+
+#uno,
+#dos {
+  display: inline-block;
+  padding: 3%;
+  width: 94%;
+}
+
+#dos {
+  border: 0px solid red;
+  display: none;
+}
+
+
+#pagewrap {}
+
+/*Botones*/
+#boton {
+  font-size: 48px;
+}
+
+#servidor {
+  float: left;
+}
+
+/*propiedades compartidas*/
+#boton,
+#servidor {
+  height: 40px;
+  width: 400px;
+  font-size: 18px;
+}
+
+/*pie de pagina*/
+#footer {
+  border: 0px solid blue;
+  display: inline-block;
+  min-height: 5px;
+  width: 100%;
+}
+
+#footder {
+  border: 0px solid red;
+  float: right;
+}
+
+#footder img {
+  max-width: 100%;
+}
+
+#footizq {
+  border: 0px solid green;
+  float: left;
+  width: 20%;
+}
+
+@media screen and (max-width: 720px),
+screen and (max-height: 480px) {
+  form {
     height: 200px;
   }
-  label{
-      font-size: 1.5em;
-    }
-  #uno input,#dos input{
-      float:right;
-      height: auto;
-      width: 220px;
-    }
-	#boton, #servidor{
-      height: auto;
-      width: auto;
-      font-size: 1.5em;
-    }
+
+  label {
+    font-size: 1.5em;
+  }
+
+  #uno input,
+  #dos input {
+    float: right;
+    height: auto;
+    width: 220px;
+  }
+
+  #boton,
+  #servidor {
+    height: auto;
+    width: auto;
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  form{
+  form {
     height: 150px;
   }
-#footizq img{
-  display: none;
-}
-#pagewrap{
+
+  #footizq img {
+    display: none;
+  }
+
+  #pagewrap {
     width: 200px;
   }
-  
-#uno input,#dos input{
-      width: 200px;
-    }
-}
-@media only screen 
-   and (max-width : 1080px) 
-   and (max-height : 1920px) {
-     body{
-      background-color: black;
-      color: white;
-      width: auto;
-      height: auto;
-      padding: 7%;
-    }
-   form{
-    height: ;
-     width: 100%;
+
+  #uno input,
+  #dos input {
+    width: 200px;
   }
-#footizq img{
-  display: none;
 }
-     #uno label, #uno input{
-       font-size: 1.5em;
-     }
-#pagewrap{
-  width: 100%;
-  padding-top: 50%;
-      border: 0px solid yellow;
-      display:flex;
-      justify-content:center;
-      align-items:center;    
-  }   
-     #footer {
-      display: none;
-    }
-  
-#uno input,#tres button{
-      width: 400px;
-    }
+
+@media only screen and (max-width : 1080px) and (max-height : 1920px) {
+  body {
+    background-color: black;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 7%;
+  }
+
+  form {
+    height: ;
+    width: 100%;
+  }
+
+  #footizq img {
+    display: none;
+  }
+
+  #uno label,
+  #uno input {
+    font-size: 1.5em;
+  }
+
+  #pagewrap {
+    width: 100%;
+    padding-top: 50%;
+    border: 0px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  #uno input,
+  #tres button {
+    width: 400px;
+  }
 }
