@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="estilo2.css"/>
-    <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Whatsapp API phone</title>
-        <script type="text/javascript">
-          function ingreso(ident) {
-            var IDPC = document.getElementById("intro").value;
-            window.open ("https://api.whatsapp.com/send?phone=54"+IDPC, '_blank');
-          }
-        </script>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-</head> 
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="estilo2.css" />
+  <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
+  <title>Whatsapp API phone</title>
+  <script type="text/javascript">
+    function ingreso(ident) {
+      var IDPC = document.getElementById("intro").value;
+      window.open("https://api.whatsapp.com/send?phone=54" + IDPC, '_blank');
+    }
+  </script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
 
 <body>
   <section>
     <div id="cuerpo">
-      <form name="formulario" method="POST" > 
+      <form name="formulario" method="POST">
         <div id="uno">
           <label>Número de teléfono:</label>
-          <input type="tel" name="IDPC" placeholder="Numero sin 0 ni 15" id="intro" autofocus autocomplete="off" maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>
+          <input type="tel" name="IDPC" placeholder="Numero sin 0 ni 15" id="intro" autofocus autocomplete="off"
+            maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
         </div>
-        
+
         <div id="dos">
-          <label>Marca de Arranque:  </label> 
-          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>          
+          <label>Marca de Arranque: </label>
+          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque"
+            onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
         </div>
 
 
         <div id="tres">
-            <!-- input type="submit"  -->
+          <!-- input type="submit"  -->
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
         </div>
-      </form> 
-    </section>
-<!-- Pie de página -->
-    <footer>
-        <div id="footizq">
-            
-        </div>
-        <div id="footder">
-            <h5>v 1.0 Por Largo®</h5>
-        </div>
-    </footer>
-</div>
+      </form>
+  </section>
+  <!-- Pie de página -->
+  <footer>
+    <div id="footizq">
+
+    </div>
+    <div id="footder">
+      <h5>v 1.0 Por Largo®</h5>
+    </div>
+  </footer>
 </body>
+
 </html>
