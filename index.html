@@ -1,41 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="estilo2.css"/>
-    <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device−width, initial−scale=1.0" />
-      <title>Whastapp API phone ARG</title>
-        <script type="text/javascript">
-          function ingreso(ident) {
-            var phone = document.getElementById("intro").value;
-            window.open ("https://api.whatsapp.com/send?phone=54"+phone, '_blank');
-          }
-        </script>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-</head> 
-<!-- Usuario: C89CDC0C5B5E Contraseña: $3lsubmarinoMB pag:https://tdserver/tdserver/student/student_login.jsp-->
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="estilo2.css" />
+  <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
+  <title>Whatsapp API phone</title>
+  <script type="text/javascript">
+    function ingreso(ident) {
+      var IDPC = document.getElementById("intro").value;
+      window.open("https://api.whatsapp.com/send?phone=54" + IDPC, '_blank');
+    }
+  </script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
 <body>
-  <div id="pagewrap">
+  <section>
     <div id="cuerpo">
-      <form ACTION="#" name="formulario" method="POST" > 
+      <form name="formulario" method="POST">
         <div id="uno">
-          <label>Número de Teléfono:</label>
-          <input type="text" name="phone" placeholder="Ejemplo: 3513844453" id="intro" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()"/>  
-         
+          <label>Número de teléfono:</label>
+          <input type="tel" name="IDPC" placeholder="Numero sin 0 ni 15" id="intro" autofocus autocomplete="off"
+            maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
         </div>
 
-        <div id="tres">         
+        <div id="dos">
+          <label>Marca de Arranque: </label>
+          <input type="text" name="Arranque" placeholder="Ejemplo: A" id="Arranque"
+            onkeydown="if (event.keyCode == 13) document.getElementById('boton').click()" />
+        </div>
+
+
+        <div id="tres">
+          <!-- input type="submit"  -->
           <button onclick="ingreso();" type="button" id="boton" name="boton">Enviar</button>
         </div>
-      </form> 
+      </form>
     </div>
-  
-  <div id="footer">
-      <div id="footizq">
-        <a href="https://www.facebook.com/elsubmarinomb" onClick="this.href='https://www.facebook.com/elsubmarinomb'" target="_blank"><img href="https://www.facebook.com/elsubmarinomb" src="http://i.imgur.com/Yo58fWg.gif" alt="Pagina de Facebook" border="0" /></a>
-      </div>
-      <div id="footder">
-        <h5>v 4.0 Por Largo®</h5>
-      </div>
-    </div>
+  </section>
+  <!-- Pie de página -->
+  <footer>
+    <div id="footizq">
 
     </div>
+    <div id="footder">
+      <h5>v 1.0 Por Largo®</h5>
+    </div>
+  </footer>
 </body>
+
+</html>

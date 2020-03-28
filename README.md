@@ -1,4 +1,4 @@
-# Desbloqueonetbook
-Sistema de desbloqueo de netbook Conectar Igualdad mediante web.
-Este sistema se basa en acceder mediante a HTML al servidor proveído a cada escuela, al poderse modificar la URL para obtener el acceso.
-http://frenchiveruti.github.io/desbloqueonetbook/
+# WPPAPI
+Sistema sencillo para enviar mensajes de whatsapp a números de telefono que no queremos agregar a nuestra lista de contactos.
+Sencillamente ingresamos el número de teléfono sin el 0 y sin el 15 y procedemos a enviar.  
+[Link](https://frenchiveruti.github.io/wppapi/)
